@@ -11,20 +11,22 @@ header {
     padding: 5vh;
 
     background: linear-gradient(45deg, #0ef3e0, #16eb92, #f6fa07, #fdd007);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .page-title {
@@ -39,7 +41,7 @@ header {
     width: 80vw;
 }
 
-.general-selector > ol {
+.general-selector>ol {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,10 +112,76 @@ main {
     font-style: italic;
 }
 
-.holiday-by-day > img {
+.holiday-by-day>img {
     width: 80vw;
     height: 80vw;
     object-fit: cover;
     margin-bottom: 2vh;
 }
 
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    body {
+        display: flex;
+    }
+
+    header {
+        height: 100vh;
+        width: 40vw;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    .page-title {
+        width: 70%;
+        padding-left: .5em;
+    }
+
+    .general-selector {
+        width: 100%;
+    }
+
+    .general-selector>ol {
+        width: 90%;
+    }
+
+    .detail-selector {
+        width: 90%;
+        padding: 0px 2em;
+    }
+
+    .search-btn {
+        width: 90%;
+    }
+
+    main {
+        width: 60vw;
+        height: 100vh;
+        overflow-y: scroll;
+
+    }
+
+    .holiday-by-day {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .holiday-by-day>img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
