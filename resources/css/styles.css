@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --main-color: #05AFF2;
+}
+
 .intro {
     font-size: 1.5em;
     display: flex;
@@ -61,8 +65,8 @@ header {
     font-weight: bold;
     font-size: 1.2em;
     height: 7.5vh;
-    border: 3px solid #05AFF2;
-    background: linear-gradient(90deg, #FFFFFF 0 40%, #05AFF2 40% 60%, #FFFFFF 60% 100%);
+    border: 3px solid var(--main-color);
+    background: linear-gradient(90deg, #FFFFFF 0 40%, var(--main-color) 40% 60%, #FFFFFF 60% 100%);
     background-size: 167% 100%;
     background-position: 100% 0%;
 }
@@ -80,7 +84,7 @@ header {
     align-items: center;
     width: 80vw;
     height: 7.5vh;
-    border: 3px solid #05AFF2;
+    border: 3px solid var(--main-color);
     margin-bottom: 2vh;
 }
 
@@ -96,7 +100,7 @@ header {
     width: 80vw;
     height: 7.5vh;
     border: 0px;
-    background-color: #05AFF2;
+    background-color: var(--main-color);
     cursor: pointer;
 }
 
