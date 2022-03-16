@@ -97,6 +97,7 @@ header {
     height: 7.5vh;
     border: 0px;
     background-color: #05AFF2;
+    cursor: pointer;
 }
 
 main {
