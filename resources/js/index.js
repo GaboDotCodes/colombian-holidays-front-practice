@@ -77,9 +77,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // fecha.toLocaleString('Default', { month: 'long'})
-    // fecha.toLocaleString('Default', { weekday: 'long'})
-
-
-
 });
