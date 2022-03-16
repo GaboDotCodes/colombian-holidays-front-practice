@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
         integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./resources/css/styles.css">
     <script defer type="module" src="./resources/js/index.js"></script>
@@ -25,7 +26,7 @@
 
         <nav>
             <div class="general-selector">
-                <ol>
+                <ol id="general-selector-list">
                     <li id="by-year" class="holidays-by">Por año</li>
                     <li id="by-month" class="holidays-by">Por mes</li>
                     <li id="by-day" class="holidays-by">Por día</li>
@@ -42,7 +43,17 @@
         </nav>
     </header>
     <main>
+        <article class="intro">
+            <h1>Hola! Soy Gabriel</h1>
+            <h2>Soy estudiante de Ingeniería de Sistemas de la <a href="https://ucaldas.edu.co/"><span class="link">Universidad de Caldas</span></a></h2>
+            <p>Este aplicativo es una práctica de diseño de interfaces web, hago uso de HTML, CSS y JavaScript.</p>
+            <p>Uso fetch api, flebox, funciones asíncronas, animaciones CSS entre otras características.</p>
+            <p>Aquí puedes consultar los días festivos en Colombia por año, por mes o saber si un día específico es
+                festivo o no. Con base en la <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4954"><span class="link">Ley 51 de 1983</span></a></p>
+            <p>La información se trae de un API que desarrollé. <a href="https://github.com/GaboDotCodes/colombian-holidays"><span class="link">Colombian Holidays</span></a></p>
+            <p>El código de este proyecto lo puedes encontrar en este <a href="https://github.com/GaboDotCodes/colombian-holidays-front-practice"><span class="link">repositorio de GitHub</span></a></p>
 
+        </article>
     </main>
 </body>
 
