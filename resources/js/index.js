@@ -7,18 +7,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     let selectedOption = 'by-year';
 
     const bySelectors = document.querySelectorAll('.holidays-by');
+    const generalSelector = document.querySelector('#general-selector-list');
+    const timingOptions =  { duration: 400, fill: 'forwards', easing: 'ease-in-out' };
+    const positionOptions = [{ backgroundPosition: '100% 0%' },
+                            { backgroundPosition: '50% 0%' },
+                            { backgroundPosition: '0% 0%' }];
     bySelectors.forEach((selector) => {
         selector.addEventListener('click', (e) => {
             const id = e.target.id;
             selectedOption = id;
             switch (id) {
                 case 'by-year':
+                    generalSelector.animate([positionOptions[0]], timingOptions);
                     Helpers.hideAllExceptOne('detail-selector', 'year-input');
                     break;
                 case 'by-month':
+                    generalSelector.animate([positionOptions[1]], timingOptions);
                     Helpers.hideAllExceptOne('detail-selector', 'month-input');
                     break;
                 case 'by-day':
+                    generalSelector.animate([positionOptions[2]], timingOptions);
                     Helpers.hideAllExceptOne('detail-selector', 'day-input');
                     break;
             }
